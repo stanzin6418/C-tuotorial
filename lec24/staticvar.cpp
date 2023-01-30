@@ -30,7 +30,8 @@ void employee :: displayn(void)
 
 }
 
-int employee :: count =10;
+int employee :: count =10;      // initalized the count as 10 so it will starrt from the 11 
+                           // static varible are declare outside the class function 
 
 
 int main()
