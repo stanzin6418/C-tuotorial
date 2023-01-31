@@ -6,17 +6,21 @@ class complex
     int a, b;
 
 public:
-    void setdata(int x, int y);
+    void setdata(void );
 
-    void sum_data(complex v1, complex v2);
+    void sum_data(complex , complex );             // passing object as function argument to class function
 
     void display(void);
 };
 
-void complex ::setdata(int x, int y)
+void complex ::setdata(void )
 {
-    a = x;
-    b = y;
+   cout<<"enter the a "<<endl;
+   cin>> a;
+
+   cout <<"enter the b "<<endl;
+   cin>>b;
+
 }
 void complex ::sum_data(complex v1, complex v2)
 {
@@ -31,11 +35,13 @@ void complex ::display(void)
 int main()
 {
 
-    complex v1, v2, v3;
-    v1.setdata(2,3);
+    complex v1, v2, v3;         // object of the class 
+
+    
+    v1.setdata();
     v1.display();
 
-    v2.setdata(4,5);
+    v2.setdata();
     v2.display();
 
     v3.sum_data(v1,v2);
