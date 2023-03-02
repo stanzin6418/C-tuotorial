@@ -2,4 +2,4 @@
 
 
 
- this is my journey of leearning c++ all by mtself 
+ this is my journey of leearning c++ all by myself 
