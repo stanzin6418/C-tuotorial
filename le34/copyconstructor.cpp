@@ -16,7 +16,7 @@ public:
         a = v;
     }
 
-    number (number &j)
+    number (number &j)                   //this is the syntac of thr copy constructor 
     {
 
         cout <<"copy constructor is called "<<endl;
@@ -43,7 +43,7 @@ int main()
 
   p=b;      // copy constructor will not invoke 
 
-  number o=b;
+  number o=b;      // for new object it will invoke 
 
 
 

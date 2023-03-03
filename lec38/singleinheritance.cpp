@@ -47,7 +47,7 @@ class derive : public base
 };
 
 void derive :: process(void )
-{
+{ 
     data3= data2*getdata1();
 }
 

@@ -10,8 +10,8 @@ class constructor
      void printf (void );
 
      constructor(int ,int  );   // constructor taking argument 
-     constructor(int );
-     constructor (void );
+     constructor(int );           // single para,yer 
+     constructor (void );       // default paramter 
 
 };
  
@@ -49,14 +49,14 @@ void constructor :: printf (void )
 int main()
 {
 
-     constructor c(3,4);
+     constructor c(3,4);     // it will call the parameter  constructor 
       c.printf();
 
 
-      constructor b(2);
+      constructor b(2);     // it will call the  single parameter construcot 
       b.printf();
 
-      constructor d;
+      constructor d;            // it will call the default parametre 
       d.printf();
 
 

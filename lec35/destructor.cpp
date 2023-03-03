@@ -28,17 +28,19 @@ int main()
 {
 
     cout <<"you enter the main function "<<endl;
-    numb n1 ;
+    numb n1 ;                                              // consstructor called fo the num1
     {
         cout <<"you enter the block "<<endl;
         cout <<"decalring two object n2,n3"<<endl;
-        numb n2,n3;
+        numb n2,n3;                                             // constructor call for the two number 
         cout <<"exiting the block "<<endl;
 
     }
 
     cout <<"back to main function"<<endl;
+     
 
+     // destructor called 
     
     return 0;
 }

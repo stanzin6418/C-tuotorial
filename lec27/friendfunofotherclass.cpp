@@ -23,7 +23,7 @@ public:
 
     // declaring each function sepeartely friend to the class 
     friend int calculator ::sumrealadd(complex c1, complex c2);
-    // friend int  calculator :: sumcompadd (complex c1 ,complex c2 );
+    // friend int  calculator :: sumcompadd (complex c1 ,complex c2 );            // even if  i comment out this function it s will still work because entire class is friend  below 
 
 
 

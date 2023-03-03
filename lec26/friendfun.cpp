@@ -7,9 +7,10 @@ class complex
 
     public:
 
-    friend complex nonfriend(complex ,complex);
-
+    friend complex nonfriend(complex ,complex);           // this friend command allows the nonfunction to access the private member of the class 
+                                                            // cannot become the member function os the class and not be abke to access the object of the class in main function 
     void setdata (int  ,int );
+    
     void diaplaydat(void );
 
 
@@ -27,7 +28,7 @@ void complex ::diaplaydat(void )
 
 }
 
-complex nonfriend(complex  p ,complex q )
+complex nonfriend(complex  p ,complex q )                // this is some other function trying to fetch the value of the class 
 {
     complex m ;
     m.setdata((p.a + q.a),(p.b + q.b));
@@ -48,6 +49,9 @@ int main()
 
     sum =nonfriend(c1,c2);
     sum.diaplaydat();
+
+
+    // nonfriend.setdata(4,5);              // this is wrong because this function is not the member function of the classs 
     
     return 0;
 }

@@ -4,7 +4,7 @@ using namespace std;
 class employee
 {
     float salary;
-    int id;
+    int id;            // private member od the base class can never be inherited to derived class 
 
 public:
     employee() {}

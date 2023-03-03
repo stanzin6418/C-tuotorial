@@ -1,65 +1,56 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-
-class base 
+class base
 {
     int data1;
 
-    public:
-
-    //this funcion will became priavte member of the derived class 
+public:
+    // this funcion will became priavte member of the derived class
 
     int data2;
-    void setdata(void );
-    int getdata1 (void );
-    int getdata2 (void );
-
+    void setdata(void);
+    int getdata1(void);
+    int getdata2(void);
 };
 
-void base:: setdata(void )
+void base::setdata(void)
 {
 
-        data1=10;
-        data2 =20;
-    
+    data1 = 10;
+    data2 = 20;
 }
 
-int base ::getdata1 (void )
+int base ::getdata1(void)
 {
-   return data1;
-
+    return data1;
 }
 
-int base ::getdata2 (void )
+int base ::getdata2(void)
 {
-   return data2;
-
+    return data2;
 }
 
-
-class derive : private base 
+class derive : private base
 {
-     int data3;
-    
-    public:
+    int data3;
 
-    void process (void );
-    void   display (void );
+public:
+    void process(void);
+    void display(void);
 };
 
-void derive :: process(void )
+void derive ::process(void)
 {
-   setdata();
-    data3= data2*getdata1();
+    setdata(); // the private function of the class are deckare here
+    data3 = data2 * getdata1();
 }
 
-void   derive ::display (void )
+void derive ::display(void)
 {
-    cout <<getdata1()<<endl;
-    cout <<data2<<endl;
-    cout <<data3<<endl;
-
+    cout << getdata1() << endl;
+    cout << data2 << endl;
+    cout << data3 << endl;
 }
 
 int main()
@@ -69,14 +60,10 @@ int main()
     // p.setdata();        //ni will not be able to call the private member directlu in  int main
     p.process();
     p.display();
-  base u ;
-  u.setdata();
-  u.getdata1();
-  u.getdata2();
+    base u;
+    u.setdata();
+    u.getdata1();
+    u.getdata2();
 
-    
-
-
-    
     return 0;
 }

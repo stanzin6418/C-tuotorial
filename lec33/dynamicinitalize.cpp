@@ -50,7 +50,7 @@ int main()
 
     int p, y, r;
 
-    cout << "enter the value of the p ,y,r " << endl;
+    cout << "enter the value of the p ,y,r " << endl;              // this will fetch the value of the int value 
 
     cin >> p;
     cin >> y;
@@ -63,7 +63,7 @@ int main()
     int m,n,x;
     
 
-    cout << "enter the value of the u,o,x " << endl;
+    cout << "enter the value of the u,o,x " << endl;             // this will fetch the value of the double 
     cin >> m;
     cin >> n;
     cin >> x;
